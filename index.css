@@ -1,0 +1,81 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-family: 'Gilroy-Heavy', sans-serif;
+    font-family: 'Gilroy-Light', sans-serif;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-family: 'Gilroy-Regular', sans-serif;
+
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(183, 190, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game_container{
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+}
+.panel{
+    width: 100%;
+    height: 100px;
+    background-color: #5454d7;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vmin;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.panel span{
+    display: inline-block;
+    padding: 10px 17px;
+    border-radius: 2px;
+    background-color: white;
+    color: rgb(70 83 149);
+    font-family: 'Gilroy-Heavy', sans-serif;
+    margin-left: 1.5vmin;
+    
+}
+.bubble_container{
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3vmin;
+    justify-content: center;
+    align-items: center;
+}
+.bubbles{
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: #5454D7;
+    height: 6vmin;
+    width: 6vmin;
+    margin-left: 1.2vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.bubbles:hover {
+    background-color: #2121b1;
+}
+#game_over{
+    color:  #5454d7;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
